@@ -8,9 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
-import testbase.BaseClass;
 
-public class AdminPage extends BaseClass{
+import testbase.Base;
+
+public class AdminPage extends Base{
 	private static final Logger logger = (Logger) LogManager.getLogger(AdminPage.class);
 
 	private WebDriver dr;
