@@ -34,6 +34,9 @@ public class DashboardPage {
 	@FindBy(css="[class='oxd-userdropdown-name']")
 	private WebElement user;
 	
+	@FindBy(xpath="//span[text()='My Info']")
+	private WebElement myInfo;
+	
 	@FindBy(xpath="//span[text()='Admin']")
 	private WebElement admin;
 	
@@ -79,5 +82,8 @@ public class DashboardPage {
 	{
 		admin.click();
 	}
-	
+	public void clickOnMyInfoTab()
+	{
+		myInfo.click();
+	}
 }
