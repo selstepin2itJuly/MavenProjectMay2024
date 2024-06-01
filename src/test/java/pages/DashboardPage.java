@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
 
 import testbase.TestBase;
 
@@ -30,6 +31,12 @@ public class DashboardPage {
 	@FindBy(xpath="//*[@class='oxd-main-menu-item']/child::span[text()='PIM']")
 	private WebElement pimMenu;
 	
+	@FindBy(css="[class='oxd-userdropdown-name']")
+	private WebElement user;
+	
+	@FindBy(xpath="//span[text()='Admin']")
+	private WebElement admin;
+	
 	public boolean isDashboardDisplayed()
 	{
 		boolean b = false;
@@ -51,6 +58,26 @@ public class DashboardPage {
 	public void clickOnPIM()
 	{
 		pimMenu.click();
+	}
+	
+	public boolean isUsernameDisplayed()
+	{
+		logger.info("Verify the user displayed after login");
+		Reporter.log("Verify the user displayed after login");
+		boolean b=false;
+		try {
+			b = user.isDisplayed();
+		}catch(Exception e){
+			logger.info(e);
+		}
+		logger.info("Value-->"+b);
+		Reporter.log("Value-->"+b);
+		return b;
+	}
+	
+	public void clickOnAdmin()
+	{
+		admin.click();
 	}
 	
 }
