@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test Login">
+    <classes>
+      <class name="testcases.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test FYP">
+    <classes>
+      <class name="testcases.ForgotYourPasswordTest"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="Test PIM">
+    <classes>
+      <class name="testcases.PIMTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

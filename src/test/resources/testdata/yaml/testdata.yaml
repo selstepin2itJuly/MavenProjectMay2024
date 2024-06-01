@@ -1,0 +1,8 @@
+   valid credentals:
+       - username : Admin
+       - password : admin123
+   
+   invalid credentials:
+       - Admin1
+       - admin123
+   
