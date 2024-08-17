@@ -4,10 +4,10 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
-- master
+- develop
 
 pool:
-  vmImage: window-latest
+  vmImage: windows-latest
 
 steps:
 - task: Maven@3
